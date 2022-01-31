@@ -1,0 +1,16 @@
+name: Running a test
+on:
+  push:
+    branches-ignore: ['main', 'master']
+  pull_request:
+    branches: ['main', 'master']
+
+jobs:
+  test_workflow:
+    name: Test Workflow
+    if: |
+      contains(github.event.head_commit.message, '[test]') || github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+    - name: First step
+      run: echo test123
