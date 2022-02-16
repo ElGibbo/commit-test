@@ -1,0 +1,15 @@
+name: Running a test
+on:
+  schedule:
+    - cron: '*/5 * * * *'
+  # branches: "master"
+  
+jobs:
+  test_workflow:
+    name: Test Workflow
+    runs-on: ubuntu-latest
+    steps:
+    - name: Echo
+      run: echo test123
+    - name: Echo 2
+      run: echo test456
