@@ -1,7 +1,7 @@
 name: Running a test
 on:
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '0 12 * * *'
   # branches: "master"
   
 jobs:
