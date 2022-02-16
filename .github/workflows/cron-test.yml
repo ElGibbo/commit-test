@@ -1,0 +1,11 @@
+name: Running a test
+on:
+  push:
+    branches: "**"
+  
+jobs:
+  test_workflow:
+    name: Test Workflow
+    runs-on: ubuntu-latest
+    steps:
+      run: echo test123
