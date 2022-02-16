@@ -10,6 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Echo
-      run: echo test123
+      run: echo test987
     - name: Echo 2
-      run: echo test456
+      run: echo test654
