@@ -10,3 +10,5 @@ jobs:
     steps:
     - name: Echo
       run: echo test123
+    - name: Echo 2
+      run: echo test456
