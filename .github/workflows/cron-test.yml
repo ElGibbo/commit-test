@@ -8,4 +8,5 @@ jobs:
     name: Test Workflow
     runs-on: ubuntu-latest
     steps:
+    - name: Echo
       run: echo test123
