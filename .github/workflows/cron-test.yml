@@ -1,7 +1,8 @@
 name: Running a test
 on:
-  push:
-    branches: "**"
+  schedule:
+    - cron: '*/5 * * * *'
+  branches: "master"
   
 jobs:
   test_workflow:
